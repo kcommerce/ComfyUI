@@ -1,0 +1,397 @@
+{
+  "last_node_id": 8,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1031,
+        286
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "a woman dressed in a light blue costume, with a bow and arrow, and a quiver on her shoulder, wearing a veil and mask, in front of a pirate ship, mountain, rocks, ocean, midriff, jewelry, long hair, windy, smokey eye shadow, high detail skin, high detail eyes, seductive eyes, smokey makeup, (eyeshadow, eyeliner:1. 6), warrior, assassin, a character portrait, cobra, Ai-Mitsu, Ambreen Butt, ((masterpiece)), ((best quality)), extremely detailed 8k wallpaper, bright colors, Dramatic light, dynamic angle, retro fantasy, ultrarealistic, photorealistic, amazing fine detail, rich colors, realistic texture, vignette, epic, gorgeous, beautiful lighting, shallow depth of field, photography, volumetric lighting, Ultra HD, raytracing, studio quality, bokeh, chromatic aberration, day, depth of field, motion blur, outdoors, photo \\(medium\\), sky, solo, moody lighting, tranquil, calm, glowing, mystical, magical, rim lighting, soft lighting, sparkle, glittering"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "VAEDecode",
+      "pos": [
+        1919,
+        302
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 6
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 8,
+      "type": "Note",
+      "pos": [
+        530,
+        648
+      ],
+      "size": {
+        "0": 440.6540222167969,
+        "1": 402.8836975097656
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "\n\n\nExample Prompts:\nhttps://maahalai.com/2023/06/basic-prompt-magmix/\n\nCamera View:\n\nside view\ntop view\nbelow view\nbehind view\n\n\n(highly detailed body, highly detailed face, best quality:1.2), woman, tank top, golden hour lighting, outdoor\n\n\n(highly detailed body, highly detailed face, best quality:1.2), woman, tank top, night, outdoor\n\n(highly detailed body, highly detailed face, best quality:1.2), woman, tank top, (dvd screengrab of 1990s dark film), outdoor\n\n(highly detailed body, highly detailed face, best quality:1.2), woman, tank top, (film grain:1.4), outdoor\n\n(highly detailed body, best quality:1.2), woman, (flirting with camera), one-piece swimsuit, beach\n\n\noutside:1. 5, 1girl, is(practicing Taekwondo:)at(Changdeokgung:), (korean:0. 4, Celtic, :0. 3, Romanian:), flirty smile, (perky medium breasts:), toned body, symmetrical eyes, (beautifully detailed body, face, eyes), (slim body), (slender body), (best hair:1), black hair, messy hair, long hair blowing in the wind, (ulzzang-6500:1 2)mix4, hiqcgbody, (detailed facial features), Brunette, detailed clothes, best makeup, smokey eye shadow, detailed mouth, detailed lips, detailed teeth, seductive grin, high detail skin, tight skin, high detail eyes, high detail hair, Cinematic lighting, epic lighting,\n\n\n\nStunning young woman, (italian:0. 3, Celtic:0. 3, Romanian:0. 4), beautiful girl, 25 years old, survivalist, warrior, in the woods by a lake, rocks, mountains, denim, jeans | leather pants, t-shirt | tank top, jacket, hiking boots, perfect body, futuristic, post apocalyptic, The 100, seductive grin, smokey eye shadow, seductive eyes, smokey makeup, wild dark hair, ((masterpiece)), ((best quality)), (((photo Realistic))), extremely detailed cg 8k wallpaper, bright colors, Dramatic light, dynamic angle, stunning, windy, high detail hair, (highly detailed eyes), (highly detailed facial features), lifelike texture, slender body, toned body, perfect face, slim athletic body, (perky small breasts:0. 75), (cold attitude, eyeshadow, eyeliner:1. 6), retro fantasy, hyper-realistic, amazing fine detail, rich colors, realistic texture, vignette, moody, dark, epic, gorgeous, film grain, grainy, beautiful lighting, rim lighting, magical, shallow depth of field, photography, neo noir, volumetric lighting, Ultra HD, raytracing, studio quality\n\n\ndynamic angle, dynamic shot, perfect face, absolutely beautiful young woman, 1960's, London, gogo boots, mini skirt\n\n\n\na woman dressed in a light blue costume, with a bow and arrow, and a quiver on her shoulder, wearing a veil and mask, in front of a pirate ship, mountain, rocks, ocean, midriff, jewelry, long hair, windy, smokey eye shadow, high detail skin, high detail eyes, seductive eyes, smokey makeup, (eyeshadow, eyeliner:1. 6), warrior, assassin, a character portrait, cobra, Ai-Mitsu, Ambreen Butt, ((masterpiece)), ((best quality)), extremely detailed 8k wallpaper, bright colors, Dramatic light, dynamic angle, retro fantasy, ultrarealistic, photorealistic, amazing fine detail, rich colors, realistic texture, vignette, epic, gorgeous, beautiful lighting, shallow depth of field, photography, volumetric lighting, Ultra HD, raytracing, studio quality, bokeh, chromatic aberration, day, depth of field, motion blur, outdoors, photo \\(medium\\), sky, solo, moody lighting, tranquil, calm, glowing, mystical, magical, rim lighting, soft lighting, sparkle, glittering\n\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        366,
+        363
+      ],
+      "size": {
+        "0": 534.98388671875,
+        "1": 211.11753845214844
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1,
+            2
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            8
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "noosphere_v3.safetensors"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "KSampler",
+      "pos": [
+        1570,
+        294
+      ],
+      "size": {
+        "0": 315,
+        "1": 262
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 9
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 4
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        85131966796335,
+        "randomize",
+        20,
+        7,
+        "dpmpp_2m",
+        "karras",
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        1134,
+        787
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        768,
+        1152,
+        6
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1043,
+        471
+      ],
+      "size": {
+        "0": 461.53515625,
+        "1": 273.1182861328125
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "bad anatomy, lowres, normal quality, grayscale, worstquality, watermark, bad proportions, out of focus, long neck, deformed, mutated, mutation, disfigured, poorly drawn face, skin blemishes, skin spots, acnes, missing limb, malformed limbs, floating limbs, disconnected limbs, extra limb, extra arms, mutated hands, poorly drawn hands, malformed hands, mutated hands and fingers, bad hands, missing fingers, fused fingers, too many fingers, extra legs, bad feet, cross-eyed,(distorted, :1.3), (:1.4), low quality, camera,UnrealisticDream, , bad-picture-chill-75v,embedding:nsfwEM, embedding:bad-hands-5, embedding:bad-picture-chill-75v, embedding:BadNegAnatomyV1-neg, embedding:easynegative, embedding:BadDream, embedding:bad_prompt_version2-neg, "
+      ]
+    },
+    {
+      "id": 7,
+      "type": "SaveImage",
+      "pos": [
+        1542,
+        573
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "NOO"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      1,
+      2,
+      0,
+      "CLIP"
+    ],
+    [
+      2,
+      1,
+      1,
+      3,
+      0,
+      "CLIP"
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      4,
+      3,
+      0,
+      4,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      5,
+      5,
+      0,
+      4,
+      3,
+      "LATENT"
+    ],
+    [
+      6,
+      4,
+      0,
+      6,
+      0,
+      "LATENT"
+    ],
+    [
+      7,
+      6,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      1,
+      2,
+      6,
+      1,
+      "VAE"
+    ],
+    [
+      9,
+      1,
+      0,
+      4,
+      0,
+      "MODEL"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
